@@ -1,0 +1,22 @@
+ALGORITHM sentence
+VAR
+    s:STRING;
+    a,c:INTEGER:=0;
+    b:INTEGER:=1;
+    i:INTEGER;
+BEGIN
+    write("give me a sentence")
+    read(s)
+    FOR i FROM 0 TO s.length-1 STEP 1  DO
+        a=a+1
+        IF (s[i]==" ") THEN
+            b=b+1
+        ELSE-IF (s[i]=={"a","i","e","o","u"})
+            c=c+1
+        END_IF
+    END_FOR
+    write("the length of the sentence is",a)
+
+
+
+END
